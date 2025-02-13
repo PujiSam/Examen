@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    padding: 20px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+.games {
+    margin-top: 20px;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game {
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.game img {
+    width: 200px;
+    height: auto;
+    border-radius: 5px;
+}
