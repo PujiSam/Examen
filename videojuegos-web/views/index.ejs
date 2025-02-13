@@ -5,19 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Videojuegos Web</title>
     <link rel="stylesheet" href="/css/styles.css">
-    <style>
-        .banner {
-            width: 100%;
-            height:150px;
-            overflow: hidden;
-            text-align: center;
-        }
-        .banner img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
 </head>
 <body>
 
@@ -26,44 +13,36 @@
         <h1>Bienvenido a la Web de Videojuegos</h1>
     </header>
 
+    <nav class="navbar">
+        <a href="/">Inicio</a>
+        <a href="/halo">Halo</a>
+        <a href="/devilmaycry">Devil May Cry</a>
+        <a href="/dota2">Dota 2</a>
+    </nav>
+
     <section class="banner">
         <img src="/images/banner.jpg" alt="Banner de videojuegos">
-    </section>
-
-    <section class="description">
-        <h2>El Mundo de los Videojuegos</h2>
-        <p>Los videojuegos han evolucionado desde simples gráficos en 8 bits hasta mundos abiertos hiperrealistas. 
-        Hoy en día, son una forma de arte, entretenimiento y competencia que abarca diversos géneros, desde la acción 
-        hasta la estrategia. Con comunidades globales, los videojuegos han dado lugar a los eSports, la realidad virtual 
-        y experiencias narrativas impresionantes.</p>
     </section>
 
     <section class="games">
         <h2>Juegos Destacados</h2>
         <div class="game-list">
-            <div class="game">
-                <img src="/images/game1.jpg" alt="Juego 1">
-                <h3>Halo - Acción</h3>
-                <p>Halo es una saga de disparos en primera persona que sigue la historia del supersoldado Master Chief 
-                y su lucha contra amenazas alienígenas. Con una jugabilidad intensa y una historia épica, 
-                es una de las franquicias más icónicas de la industria.</p>
+            <div class="game" data-game="halo">
+                <img src="/images/game1.jpg" alt="Halo">
+                <p>Halo - Acción</p>
             </div>
-            <div class="game">
-                <img src="/images/game2.jpg" alt="Juego 2">
-                <h3>Devil May Cry - Aventura</h3>
-                <p>Devil May Cry es una serie de juegos de acción y aventura donde los jugadores controlan a Dante, un cazador de demonios 
-                con habilidades sobrenaturales. Con un combate frenético y un diseño visual impresionante, es un referente en el género hack and slash.</p>
+            <div class="game" data-game="devilmaycry">
+                <img src="/images/game2.jpg" alt="Devil May Cry">
+                <p>Devil May Cry - Aventura</p>
             </div>
-            <div class="game">
-                <img src="/images/game3.jpg" alt="Juego 3">
-                <h3>Dota 2 - Estrategia</h3>
-                <p>Dota 2 es un juego de estrategia en tiempo real basado en el trabajo en equipo y la habilidad táctica. 
-                Como uno de los títulos más populares en los eSports, enfrenta a dos equipos en un campo de batalla donde la estrategia 
-                y la coordinación son clave para la victoria.</p>
+            <div class="game" data-game="dota2">
+                <img src="/images/game3.jpg" alt="Dota 2">
+                <p>Dota 2 - Estrategia</p>
             </div>
         </div>
     </section>
-    
+
     <script src="/js/script.js"></script>
 </body>
 </html>
+
